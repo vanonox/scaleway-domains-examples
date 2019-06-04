@@ -80,7 +80,7 @@ curl --request PATCH \
 
 ```
 curl --request GET \
---url 'https://api.scaleway.com/domain/v2alpha2/dns-zones/doamin-test.fr/records/
+--url 'https://api.scaleway.com/domain/v2alpha2/dns-zones/doamin-test.fr/records/' \
 --header 'x-auth-token: XXXXXXXXX'
 ```
 
