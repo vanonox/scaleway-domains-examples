@@ -95,10 +95,10 @@ use the repo https://github.com/vanonox/ansible-scaleway
 
 use the branch https://github.com/vanonox/certbot/tree/scaleway
 
-*clone the git and go to certbot-dns-scaleway 
-*make a local directory to store : `mkdir certs`
-*copy the scaleway.ini in certbot-dns-scaleway to `certs` and edit scaleway.ini to insert your access token
-*build a local image :  `docker build . -t certbot-test`
-*execute the certbot to create a new certificate ,
+* clone the git and go to certbot-dns-scaleway 
+* make a local directory to store : `mkdir certs`
+* copy the scaleway.ini in certbot-dns-scaleway to `certs` and edit scaleway.ini to insert your access token
+* build a local image :  `docker build . -t certbot-test`
+* execute the certbot to create a new certificate ,
 for example :
 `docker run -it --volume `pwd`/certs:/etc/letsencrypt certbot-test certonly -a certbot-dns-scaleway:dns-scaleway --certbot-dns-scaleway:dns-scaleway-credentials /etc/letsencrypt/scaleway.ini --agree-tos --noninteractive --email vhtran@online.net -d www.domain.test`
