@@ -88,8 +88,8 @@ curl --request GET \
 
 use the repo https://github.com/vanonox/ansible-scaleway
 
-*there is some playbooks to update the DNS
-*playbooks to manage your Domains will be added in the future
+* there is some playbooks to update the DNS
+* playbooks to manage your Domains will be added in the future
 
 ## Certbot for LE certs
 
