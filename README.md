@@ -101,4 +101,4 @@ use the branch https://github.com/vanonox/certbot/tree/scaleway
 * build a local image :  `docker build . -t certbot-test`
 * execute the certbot to create a new certificate ,
 for example :
-`docker run -it --volume `pwd`/certs:/etc/letsencrypt certbot-test certonly -a certbot-dns-scaleway:dns-scaleway --certbot-dns-scaleway:dns-scaleway-credentials /etc/letsencrypt/scaleway.ini --agree-tos --noninteractive --email vhtran@online.net -d www.domain.test`
+`docker run -it --volume `pwd`/certs:/etc/letsencrypt certbot-test certonly -a certbot-dns-scaleway:dns-scaleway --certbot-dns-scaleway:dns-scaleway-credentials /etc/letsencrypt/scaleway.ini --agree-tos --noninteractive --email email@email.fr -d www.domain.test`
